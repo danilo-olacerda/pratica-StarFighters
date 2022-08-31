@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import registerBattleResults from '../repositories/battleRepositorie.js';
+import registerBattleResults from '../repositories/battleRepository.js';
 
 export default async function resolveBattle(req: Request, res: Response, next: Function) {
 
@@ -69,8 +69,8 @@ export default async function resolveBattle(req: Request, res: Response, next: F
             }
     
             const winnerResponse = {
-                winner: "",
-                loser: "",
+                winner: null,
+                loser: null,
                 draw: true
             }
     
